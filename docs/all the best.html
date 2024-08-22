@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Luck!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6f2; /* Light pink background */
+        }
+
+        .card {
+            text-align: center;
+            background: white; /* White background for the message box */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5em;
+            color: #4CAF50;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        p {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2em;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+            animation-delay: 1s;
+        }
+
+        .animation-container {
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 4s ease-in-out forwards;
+            animation-delay: 2s;
+        }
+
+        img {
+            width: 150px; /* Increase the size of the flower */
+            height: 150px;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 id="greeting">All the best, baby!</h1>
+        <p id="message">You gonna do great in your exam! Remember, I’m cheering for ya all the time🎀 (✿◡‿◡), No matter whhat others say but you are the best💙 and I love you so much my darling🫶 </p>
+        <div class="animation-container">
+            <img src="flower.png" alt="Flower" id="flower">
+        </div>
+    </div>
+    <script>
+        // You can add more interactive features with JavaScript if needed
+    </script>
+</body>
+</html>
